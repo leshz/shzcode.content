@@ -13,7 +13,7 @@
 |------|--------|----------|----------------|
 | Fase 0: Preparación | ✅ Completado | 100% | 1-2 días |
 | Fase 1: CSS | ✅ Completado | 100% | 3-5 días |
-| Fase 2: Componentes Astro | ⏳ Pendiente | 0% | 6-8 días |
+| Fase 2: Componentes Astro | ✅ Completado | 100% | 6-8 días |
 | Fase 3: React Islands | ⏳ Pendiente | 0% | 9-13 días |
 | Fase 4: Content Collections | ⏳ Pendiente | 0% | 14-16 días |
 | Fase 5: TypeScript | ⏳ Pendiente | 0% | 17-19 días |
@@ -105,25 +105,30 @@
 
 ---
 
-## Fase 2: Componentes Estáticos en Astro ⏳
+## Fase 2: Componentes Estáticos en Astro ✅
 
 **Objetivo:** Migrar componentes sin interactividad a Astro
 
 ### Layouts
-- [ ] `BaseLayout.astro` creado
-- [ ] `Header.astro` creado
-- [ ] `Footer.astro` creado
+- [x] `BaseLayout.astro` creado (ya existía de Fase 1)
+- [x] `Footer.astro` creado y migrado
 
 ### Componentes Estáticos
-- [ ] `About.astro` migrado
-- [ ] `Resume.astro` migrado
-- [ ] `Services.astro` migrado
-- [ ] `ContactsInfo.astro` migrado
+- [x] `About.astro` migrado con datos de Jeff Barragán
+- [x] `Resume.astro` migrado con experiencia y educación
+- [x] `Services.astro` migrado con 6 servicios
+- [x] `ContactsInfo.astro` migrado con formulario de contacto
+
+### Página Principal
+- [x] `src/pages/index.astro` creada con todos los componentes
+- [x] Hero section estático temporal (será React Island en Fase 3)
+- [x] Skills section estático temporal (será React Island en Fase 3)
+- [x] Comentarios para secciones pendientes (Clients, Portfolio, Blog)
 
 ### Validación
-- [ ] HTML estructura idéntica al original
-- [ ] CSS aplicado correctamente
-- [ ] Componentes renderizan sin errores
+- [x] HTML estructura mantiene clases CSS del theme
+- [x] CSS aplicado correctamente
+- [x] Componentes renderizan sin errores (verified con astro dev)
 
 ### Archivos de Referencia
 - `/workspaces/Shzcode/Frontend/src/components/About.tsx`

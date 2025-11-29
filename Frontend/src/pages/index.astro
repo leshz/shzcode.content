@@ -1,34 +1,102 @@
 ---
 import BaseLayout from '@/layouts/BaseLayout.astro';
+import Footer from '@/layouts/Footer.astro';
+import About from '@/components/astro/About.astro';
+import Resume from '@/components/astro/Resume.astro';
+import Services from '@/components/astro/Services.astro';
+import ContactsInfo from '@/components/astro/ContactsInfo.astro';
 ---
 
-<BaseLayout title="shzcode.tech - Migración a Astro">
-  <div class="section started" style="height: 100vh; display: flex; align-items: center; justify-content: center;">
+<BaseLayout
+  title="Jeff Barragán - Front-end Director & Fullstack Developer"
+  description="Portfolio personal de Jeff Barragán. Front-end Director, Fullstack Developer y entusiasta de las criptomonedas. Basado en Colombia."
+  theme="orange"
+>
+  <!-- Hero Section - Will be React Island in Phase 3 -->
+  <div class="section started" id="section-started" style="height: 100vh;">
     <div class="centrize full-width">
       <div class="vertical-center">
-        <div style="text-align: center; padding: 40px;">
-          <h1 class="glitch-effect" data-text="shzcode.tech">
-            shzcode.tech
-          </h1>
-          <h2 style="margin-top: 20px;">🚀 Migración a Astro - Fase 1 Completada</h2>
-
-          <div style="max-width: 600px; margin: 40px auto; text-align: left;">
-            <h3>✅ CSS Migrado y Modernizado:</h3>
-            <ul style="list-style: disc; padding-left: 30px; margin-top: 20px;">
-              <li style="margin-bottom: 10px;"><strong>theme.css</strong> - Sistema de variables CSS</li>
-              <li style="margin-bottom: 10px;"><strong>global.css</strong> - Estilos base modernizados (sin prefijos)</li>
-              <li style="margin-bottom: 10px;"><strong>animations.css</strong> - Animaciones de Glitche</li>
-              <li style="margin-bottom: 10px;"><strong>ionicons.css</strong> - Iconos</li>
-              <li style="margin-bottom: 10px;"><strong>layout.css</strong> - Layout completo (2402 líneas)</li>
-              <li style="margin-bottom: 10px;"><strong>Fuentes Roboto Mono</strong> - 5 weights configurados</li>
-            </ul>
+        <div class="started-content">
+          <div class="h-title glitch-effect" data-text="I'm Jeff Barragán">
+            I'm <span>Jeff Barragán</span>
           </div>
-
-          <div style="margin-top: 40px;">
-            <a href="#" class="btn fill">Siguiente: Componentes Astro →</a>
+          <div class="h-subtitles">
+            <div class="h-subtitle typing-subtitle">
+              <p>Front-end Director</p>
+              <p>Fullstack Developer</p>
+              <p>UX/UI Designer</p>
+              <p>Cryptocurrency Enthusiast</p>
+              <p>Based in Colombia</p>
+            </div>
+            <span class="typed-subtitle"></span>
           </div>
         </div>
       </div>
     </div>
+    <a href="#section-resume" class="mouse_btn">
+      <span class="ion ion-mouse"></span>
+    </a>
   </div>
+
+  <!-- About Section -->
+  <About />
+
+  <!-- Resume Section -->
+  <Resume />
+
+  <!-- Skills Section - Will be React Island in Phase 3 -->
+  <div class="section skills" id="section-skills">
+    <div class="content">
+      <div class="title">
+        <div class="title_inner">Skills</div>
+      </div>
+      <div class="skills">
+        <ul>
+          <li>
+            <div class="name">JavaScript / TypeScript</div>
+            <div class="progress">
+              <div class="percentage" style="width: 95%;"></div>
+            </div>
+          </li>
+          <li>
+            <div class="name">React / Next.js / Astro</div>
+            <div class="progress">
+              <div class="percentage" style="width: 90%;"></div>
+            </div>
+          </li>
+          <li>
+            <div class="name">Node.js / Express</div>
+            <div class="progress">
+              <div class="percentage" style="width: 85%;"></div>
+            </div>
+          </li>
+          <li>
+            <div class="name">CSS / Tailwind / Styled Components</div>
+            <div class="progress">
+              <div class="percentage" style="width: 92%;"></div>
+            </div>
+          </li>
+          <li>
+            <div class="name">Git / CI/CD / Cloud Services</div>
+            <div class="progress">
+              <div class="percentage" style="width: 88%;"></div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- Services Section -->
+  <Services />
+
+  <!-- Clients Section - Will be React Island in Phase 3 -->
+  <!-- Portfolio Section - Will be React Island in Phase 3 -->
+  <!-- Blog Section - Will be React Island in Phase 3 -->
+
+  <!-- Contacts Section -->
+  <ContactsInfo />
+
+  <!-- Footer -->
+  <Footer />
 </BaseLayout>

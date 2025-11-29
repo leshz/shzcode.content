@@ -1,0 +1,61 @@
+---
+/**
+ * ContactsInfo Component - Contact information and form
+ */
+---
+
+<div class="section contacts section_" id="section-contacts">
+  <div class="content">
+    <div class="title">
+      <div class="title_inner">Contacts</div>
+    </div>
+    <div class="service-items">
+      <div class="service-item">
+        <div class="icon">
+          <span class="ion ion-email"></span>
+        </div>
+        <div class="name">Email</div>
+        <p>
+          <a href="mailto:leshz@me.com">leshz@me.com</a>
+        </p>
+      </div>
+      <div class="service-item">
+        <div class="icon">
+          <span class="ion ion-social-github"></span>
+        </div>
+        <div class="name">GitHub</div>
+        <p>
+          <a href="https://github.com/leshz" target="_blank" rel="noopener">@leshz</a>
+        </p>
+      </div>
+      <div class="service-item">
+        <div class="icon">
+          <span class="ion ion-ios-location"></span>
+        </div>
+        <div class="name">Location</div>
+        <p>Colombia</p>
+      </div>
+    </div>
+    <div class="contact_form">
+      <form id="cform" method="post">
+        <div class="group-val">
+          <input type="text" name="name" placeholder="Name" />
+        </div>
+        <div class="group-val">
+          <input type="email" name="email" placeholder="Email" />
+        </div>
+        <div class="group-val ct-gr">
+          <textarea name="message" placeholder="Message"></textarea>
+        </div>
+        <a href="#" class="btn fill" data-text="Send Message">
+          Send Message
+        </a>
+      </form>
+      <div class="alert-success">
+        <p>
+          Thanks, your message is sent successfully. We will contact you shortly!
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
