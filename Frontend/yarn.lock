@@ -332,7 +332,7 @@
   dependencies:
     "@emmetio/scanner" "^1.0.4"
 
-"@emmetio/css-parser@github:ramya-rao-a/css-parser#vscode":
+"@emmetio/css-parser@ramya-rao-a/css-parser#vscode":
   version "0.4.0"
   resolved "https://codeload.github.com/ramya-rao-a/css-parser/tar.gz/370c480ac103bd17c7bcfb34bf5d577dc40d3660"
   dependencies:
@@ -483,7 +483,7 @@
   resolved "https://registry.yarnpkg.com/@esbuild/win32-x64/-/win32-x64-0.21.5.tgz#acad351d582d157bb145535db2a6ff53dd514b5c"
   integrity sha512-tQd/1efJuzPC6rCFwEvLtci/xNFcTZknmXs98FYDfGE4wP9ClFV98nyKrzJKVPMhdDnjzLhdUyMX4PsQAPjwIw==
 
-"@fontsource/roboto-mono@^5.0.0":
+"@fontsource/roboto-mono@^5.2.8":
   version "5.2.8"
   resolved "https://registry.yarnpkg.com/@fontsource/roboto-mono/-/roboto-mono-5.2.8.tgz#b77a6e3f6c0329ed2d762f0aa9c9ea4740bc4ff5"
   integrity sha512-M0XPRcvkOKiTPooXwX7yJSNpuad3CPcQwsADBfnopz3apBs+VKI47pc42mlvAxJjNTRauu5rndSxHc8F52bR7Q==

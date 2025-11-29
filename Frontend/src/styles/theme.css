@@ -1,0 +1,102 @@
+/*
+ * Theme Variables - Converted from LESS to Modern CSS
+ * Original: /public/less/setting.less
+ */
+
+:root {
+  /* Colors */
+  --color-bg: #fff;
+  --color-text: #363636;
+  --color-text-light: #999;
+  --color-dark: #141414;
+  --color-border: #ddd;
+  --color-white: #fff;
+  --color-primary: #f26b38;
+  --color-accent: #ede574;
+  --color-error: red;
+
+  /* Typography */
+  --font-family: var(--font-roboto);
+  --font-icons: 'Ionicons';
+
+  /* Font Sizes */
+  --font-size-base: 13px;
+  --font-size-large: 15px;
+  --font-size-small: 12px;
+  --font-size-extra-small: 11px;
+  --font-size-title: 68px;
+  --font-size-subtitle: 15px;
+  --font-size-h1: 26px;
+  --font-size-h2: 23px;
+  --font-size-h3: 20px;
+  --font-size-h4: 18px;
+  --font-size-h5: 16px;
+  --font-size-h6: 14px;
+
+  /* Spacing */
+  --line-height: 23px;
+  --letter-spacing: 0;
+  --letter-spacing-wide: 0.04em;
+
+  /* Layout */
+  --container-max-width: 1060px;
+
+  /* Forms */
+  --form-border: 1px solid var(--color-border);
+  --form-border-hover: 1px solid var(--color-primary);
+}
+
+/* Color Variants (Theme Switching) */
+[data-theme='orange'] {
+  --color-primary: #f26b38;
+}
+
+[data-theme='blue'] {
+  --color-primary: #007bff;
+}
+
+[data-theme='green'] {
+  --color-primary: #28a745;
+}
+
+[data-theme='pink'] {
+  --color-primary: #e83e8c;
+}
+
+[data-theme='purple'] {
+  --color-primary: #6f42c1;
+}
+
+[data-theme='red'] {
+  --color-primary: #dc3545;
+}
+
+/* Dark Mode Support */
+[data-theme='dark'] {
+  --color-bg: #141414;
+  --color-text: #fff;
+  --color-text-light: #999;
+  --color-dark: #fff;
+  --color-border: #333;
+  --color-white: #141414;
+}
+
+/* Utility: Border Radius */
+.border-radius {
+  border-radius: 4px;
+}
+
+/* Utility: Transitions */
+.transition {
+  transition: all 0.3s ease;
+}
+
+/* Utility: Transform */
+.transform {
+  transform: translateZ(0);
+}
+
+/* Utility: Box Shadow */
+.box-shadow {
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}

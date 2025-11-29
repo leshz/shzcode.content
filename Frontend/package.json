@@ -22,7 +22,7 @@
     "@astrojs/mdx": "^3.1.0",
     "@astrojs/react": "^3.6.0",
     "@astrojs/sitemap": "^3.1.0",
-    "@fontsource/roboto-mono": "^5.0.0",
+    "@fontsource/roboto-mono": "^5.2.8",
     "astro": "^4.15.0",
     "fslightbox-react": "^1.7.6",
     "isotope-layout": "^3.0.6",

@@ -1,0 +1,70 @@
+---
+/**
+ * Base Layout - Main layout for all pages
+ * Imports all global styles and sets up the Glitche theme
+ */
+
+// Import fonts
+import '@fontsource/roboto-mono/100.css';
+import '@fontsource/roboto-mono/300.css';
+import '@fontsource/roboto-mono/400.css';
+import '@fontsource/roboto-mono/500.css';
+import '@fontsource/roboto-mono/700.css';
+
+// Import styles in order
+import '@/styles/theme.css';
+import '@/styles/global.css';
+import '@/styles/animations.css';
+import '@/styles/ionicons.css';
+import '@/styles/components/layout.css';
+
+interface Props {
+  title?: string;
+  description?: string;
+  theme?: 'orange' | 'blue' | 'green' | 'pink' | 'purple' | 'red';
+}
+
+const {
+  title = 'Glitche - Portfolio',
+  description = 'Personal portfolio from Jeff Barragán',
+  theme = 'orange',
+} = Astro.props;
+---
+
+<!DOCTYPE html>
+<html lang="es" data-theme={theme}>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content={description} />
+    <title>{title}</title>
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+  </head>
+  <body>
+    <div class="container">
+      <!-- Border lines -->
+      <div class="line top"></div>
+      <div class="line bottom"></div>
+      <div class="line left"></div>
+      <div class="line right"></div>
+
+      <div class="wrapper">
+        <slot />
+      </div>
+    </div>
+
+    <script>
+      // Mark body as loaded after DOM is ready
+      document.addEventListener('DOMContentLoaded', () => {
+        document.body.classList.add('loaded');
+      });
+    </script>
+  </body>
+</html>
+
+<style>
+  /* Roboto Mono font variable */
+  :root {
+    --font-roboto: 'Roboto Mono', monospace;
+  }
+</style>

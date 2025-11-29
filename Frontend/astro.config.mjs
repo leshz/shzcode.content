@@ -12,9 +12,4 @@ export default defineConfig({
     sitemap()
   ],
   output: 'static',
-  vite: {
-    css: {
-      transformer: 'lightningcss',
-    },
-  },
 });
